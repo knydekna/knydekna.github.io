@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Choice</title>
+    <style>
+        .box-terluar{
+            background-color: bisque;
+            width: 800px;
+            margin: auto;
+            height: 100nv;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        h1{
+            text-align: Right;
+            padding: 20px;
+        }
+        textarea{
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-terluar">
+        <h1>Hi-Tech Order Form</h1>
+            <form action="" method="POST">
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text"  maxlength="25"></td>
+                </tr>
+            </table>
+            <br>
+            <p>Type Of Order:
+            <br><input type="radio" name="prefer" value="out" checked="checked"> Take Out
+            <br><input type="radio" name="prefer" value="in"> Eat here
+            </p>
+            <p>
+                <br>
+                <select name="rate">
+                    <option value="dog">hot dog</option>
+                     <option value="burger">hamburger</option>
+                    <option value="chiken">chicken fingers</option>
+                    <option value="salad">green salad</option>
+                </select>
+            </p>
+            <br>
+            <p>What else would you like?
+                <br><input type="checkbox" name="tanpa cek" value="1">iced tea
+                <br><input type="checkbox" name="tanpa cek" value="1">french fries
+            </p>
+            <br>
+            <textarea rows="5" cols="40" placeholder=" spesial insturuction :" wrap="no"></textarea>
+            <br>
+            <p><input type="submit" value="Submit the Order"></p>
+            <p></p><input type="reset" value="Reset-Try Again"></p>
+            </form>
+    </div>
+</body>
+</html>
